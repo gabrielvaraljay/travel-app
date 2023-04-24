@@ -6,6 +6,11 @@ body {
   header {
     margin-bottom: 20px;
   }
+
+  .image-container {
+    padding-right: 100px;
+    padding-left: 30px;
+}
   
   .trip-info {
     margin-top: 50px;
@@ -25,3 +30,33 @@ body {
     margin-bottom: 10px;
   }
   
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-md-6 {
+    flex: 1 0 50%;
+  }
+  
+  .col-md-6:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .col-md-6:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+  }
