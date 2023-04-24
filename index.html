@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Planner</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Travel Planner</a>
+    </nav>
+  </header>
+  
+  <main class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="https://via.placeholder.com/600x400" alt="Placeholder image">
+      </div>
+      <div class="col-md-6">
+        <div class="trip-info">
+          <h2>My trip to:</h2>
+          <button class="btn btn-primary save-trip">Save Trip</button>
+          <button class="btn btn-danger remove-trip">Remove Trip</button>
+          <p class="trip-date">Trip date: [DATE]</p>
+          <p class="days-to-trip">Days until trip: [DAYS]</p>
+          <p class="trip-location">Location: [LOCATION]</p>
+          <p class="trip-weather">Weather: [WEATHER]</p>
+          <p class="trip-temp">Temperature: [TEMPERATURE]</p>
+          <p class="trip-humidity">Humidity: [HUMIDITY]</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
