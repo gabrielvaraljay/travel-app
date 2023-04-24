@@ -13,7 +13,6 @@
       <a class="navbar-brand" href="#">Travel Planner</a>
     </nav>
   </header>
-  
   <main class="container-fluid">
     <div class="row">
       <div class="col-md-6 d-flex justify-content-center align-items-center">
@@ -37,25 +36,22 @@
             <button class="btn btn-primary save-trip">Save Trip</button>
             <button class="btn btn-danger remove-trip">Remove Trip</button>
           </div>
-          <p class="trip-date">Trip date: <span id="trip-date"></span></p>
+          <p class="trip-date">Trip date: <span id="trip-date-display"></span></p>
           <p class="days-to-trip">Days until trip: [DAYS]</p>
-          <p class="trip-location">Location: [LOCATION]</p>
-          <p class="trip-weather">Weather: [WEATHER]</p>
-          <p class="trip-temp">Temperature: [TEMPERATURE]</p>
+          <p class="trip-location">Location: <span id="location-display"></span></p>
+          <p class="trip-weather">Weather: <span id="temperature"></span></p>
+          <p class="trip-temp">Temperature: <span id="humidity"></span></p>
           <p class="trip-humidity">Humidity: [HUMIDITY]</p>
         </div>
       </div>
     </div>
   </main>  
-
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <footer class="footer">
+    <p>Travel Planner - 2023 Gabriel Varaljay - all rights reserved</p>
+  </footer>
+  <script src="app.js"></script>
 </body>
-<footer class="footer">
-  <p>Travel Planner - 2023 Gabriel Varaljay - all rights reserved</p>
-</footer>
-</div>
 </html>
-  
-  

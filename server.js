@@ -1,3 +1,6 @@
+// Require dotenv to access environment variables
+require('dotenv').config();
+
 // Setup empty JS object to act as endpoint for all routes
 const projectData = {};
 
@@ -21,7 +24,7 @@ app.use(cors());
 app.use(express.static('website'));
 
 // Setup Server
-const port = 3000;
+const port = process.env.PORT || 3000;
 const server = app.listen(port, listening);
 
 function listening() {
@@ -34,9 +37,12 @@ app.get('/all', (req, res) => {
 });
 
 // POST route
-app.post('/add', (req, res) => {
+app.post('/addData', (req, res) => {
   projectData.temperature = req.body.temperature;
+  projectData.humidity = req.body.humidity;
   projectData.date = req.body.date;
-  projectData.userResponse = req.body.userResponse;
+  projectData.tripDate = req.body.tripDate;
+  projectData.location = req.body.location;
   res.send(projectData);
 });
+
