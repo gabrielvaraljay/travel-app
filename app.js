@@ -1,5 +1,5 @@
 // Import node-fetch
-const fetch = require('node-fetch-commonjs');
+const fetch = require('node-fetch');
 
 // Require dotenv to access environment variables
 require('dotenv').config();
