@@ -16,6 +16,10 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+//express.static middleware to serve the static files from the dist directory
+app.use(express.static('dist'));
+
+
 // Cors for cross origin allowance
 const cors = require('cors');
 app.use(cors());
